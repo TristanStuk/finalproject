@@ -6,9 +6,56 @@ body {
     color: #fff;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Cinzel', serif; 
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; 
+}
+
 nav ul li a {
+    display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: #fff; 
+    padding: 10px 15px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: gold; 
+}
+
+nav ul li a.active {
+    font-weight: bold; 
+    color: gold; 
+    border-bottom: 2px solid gold; 
 }
 
 .upcoming-movies {
@@ -17,7 +64,7 @@ nav ul li a {
 
 .movie-slider {
     display: flex;
-    overflow-x: auto;
+    overflow-x: auto; 
     gap: 10px;
 }
 
@@ -69,45 +116,6 @@ table {
 table th, table td {
     border: 1px solid #444;
     padding: 10px;
-    text-align: left;
-}
-
-table th {
-    background: #333;
-    color: #fff;
-}
-
-table td {
-    background: #222;
-    color: #fff;
-}
-
-nav ul li a.active {
-    font-weight: bold;
-    color: gold;
-}
-
-nav ul li a.active {
-    font-weight: bold;
-    color: gold;
-    border-bottom: 2px solid gold;
-}
-
-nav ul li a.active {
-    font-weight: bold; 
-    color: gold;       
-    border-bottom: 2px solid gold; 
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table th, table td {
-    border: 1px solid #444;
-    padding: 10px;
     text-align: center;
 }
 
@@ -142,70 +150,18 @@ table tr:hover {
     margin-bottom: 20px;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    margin-left: 10px; 
+@media (max-width: 768px) {
+    .bottom-sections {
+        flex-direction: column; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
 }
-
-.logo {
-    height: 50px; 
-    width: auto;
-}
-
-.logo-text {
-    font-family: 'Cursive', sans-serif; 
-    font-size: 24px; 
-    font-weight: bold;
-    color: gold; 
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-}
-
-nav ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: gold;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-}
-
-.logo-text {
-    font-family: 'Cinzel', serif;
-    color: gold;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
