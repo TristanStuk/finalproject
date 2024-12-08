@@ -155,8 +155,24 @@ table tr:hover {
     margin-bottom: 20px;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0; 
+}
+
 nav ul li a {
     display: inline-block;
+    flex: 1; 
+    text-align: center;
     padding: 10px 15px; 
     text-decoration: none;
     color: #fff;
@@ -166,7 +182,6 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    font-weight: normal; 
-    color: gold;
+    color: gold; 
     border-bottom: 2px solid gold; 
 }
