@@ -155,4 +155,9 @@ table tr:hover {
     margin-bottom: 20px;
 }
 
-
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-left: 10px; 
+}
