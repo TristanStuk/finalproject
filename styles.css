@@ -278,6 +278,40 @@ table tr:hover {
     font-size: 14px;
 }
 
+.active-bets {
+    padding: 20px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.active-bets .bet-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.active-bets .bet-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.active-bets .bet-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.active-bets .bet-item p strong {
+    color: gold;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; 
