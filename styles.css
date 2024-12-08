@@ -105,3 +105,9 @@ nav ul li a.active {
     color: gold;
     border-bottom: 2px solid gold;
 }
+
+nav ul li a.active {
+    font-weight: bold; 
+    color: gold;       
+    border-bottom: 2px solid gold; 
+}
