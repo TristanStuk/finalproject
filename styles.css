@@ -94,3 +94,8 @@ table td {
     background: #222;
     color: #fff;
 }
+
+nav ul li a.active {
+    font-weight: bold;
+    color: gold;
+}
