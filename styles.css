@@ -161,3 +161,8 @@ table tr:hover {
     gap: 10px; 
     margin-left: 10px; 
 }
+
+.logo {
+    height: 50px; 
+    width: auto;
+}
