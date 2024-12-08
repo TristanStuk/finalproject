@@ -200,6 +200,35 @@ table tr:hover {
     margin-bottom: 20px;
 }
 
+.recent-winners .winner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recent-winners .winner img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.recent-winners .winner p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.recent-winners .winner .tomatometer {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.recent-winners .winner .popcorn-meter {
+    color: #ffa726;
+    font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; 
