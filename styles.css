@@ -23,3 +23,17 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+
+.upcoming-movies {
+    padding: 20px;
+}
+
+.movie-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.movie-slider img {
+    height: 150px;
+}
