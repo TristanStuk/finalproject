@@ -44,7 +44,6 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -202,10 +201,6 @@ table tr:hover {
 }
 
 @media (max-width: 768px) {
-    .bottom-sections {
-        flex-direction: column; 
-    }
-
     nav ul {
         flex-direction: column; 
         gap: 10px; 
@@ -213,6 +208,6 @@ table tr:hover {
 
     header {
         flex-direction: column; 
-        align-items: flex-start;
+        align-items: flex-start; 
     }
 }
