@@ -37,3 +37,17 @@ nav ul li a {
 .movie-slider img {
     height: 150px;
 }
+
+.bottom-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.bottom-sections > div {
+    flex: 1;
+    padding: 10px;
+    background: #222;
+    border-radius: 5px;
+}
