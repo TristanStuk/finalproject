@@ -154,3 +154,19 @@ table tr:hover {
     text-align: center;
     margin-bottom: 20px;
 }
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px; 
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal; 
+    border-bottom: 2px solid transparent; 
+    transition: color 0.3s, border-bottom 0.3s; 
+}
+
+nav ul li a.active {
+    font-weight: normal; 
+    color: gold;
+    border-bottom: 2px solid gold; 
+}
