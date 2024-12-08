@@ -228,6 +228,55 @@ table tr:hover {
     font-weight: bold;
 }
 
+.popular-bets .bet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.popular-bets .bet-item {
+    text-align: center;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.popular-bets .bet-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.popular-bets .bet-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.popular-bets .bet-item .bets-count {
+    font-weight: bold;
+    color: gold;
+}
+
+.popular-bets .bet-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.popular-bets .bet-item .bets-count {
+    font-weight: bold;
+    color: gold;
+}
+
+.popular-bets .bet-item .wagered-amount {
+    font-weight: bold;
+    color: #32CD32; /* Lime Green */
+    font-size: 14px;
+}
 
 @media (max-width: 768px) {
     nav ul {
