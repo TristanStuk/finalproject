@@ -60,17 +60,47 @@ nav ul li a.active {
 
 .upcoming-movies {
     padding: 20px;
+    text-align: center;
 }
 
 .movie-slider {
     display: flex;
+    gap: 20px
     overflow-x: auto; 
-    gap: 10px;
+    padding: 10px 0;
+    scrollbar-width: thin;
 }
 
-.movie-slider img {
-    height: 150px;
+.movie-slider::-webkit-scrollbar {
+    height: 8px; 
 }
+
+.movie-slider::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 5px;
+
+    .movie-item {
+        text-align: center;
+    }
+
+    .movie-item img {
+        width: 150px; 
+        height: auto;
+        border-radius: 5px; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+        transition: transform 0.3s ease; 
+    }
+    
+    .movie-item img:hover {
+        transform: scale(1.1); 
+    }
+    
+    .movie-item p {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
 
 .bottom-sections {
     display: flex;
