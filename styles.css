@@ -111,3 +111,33 @@ nav ul li a.active {
     color: gold;       
     border-bottom: 2px solid gold; 
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #333;
+    color: #fff;
+}
+
+table td {
+    background: #222;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #292929; 
+}
+
+table tr:hover {
+    background: #444; 
+}
