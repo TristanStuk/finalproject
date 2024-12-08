@@ -1,10 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
-    height: 100vh;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +13,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background: linear-gradient(90deg, #1a1a1a, #212121);
+    border-bottom: 2px solid #29b6f6;
 }
 
 .logo-container {
@@ -29,8 +29,8 @@ header {
 }
 
 .logo-text {
-    font-family: 'Cinzel', serif;
-    color: gold;
+    font-family: 'Roboto', sans-serif;
+    color: #29b6f6;
     font-size: 24px;
     font-weight: bold;
 }
@@ -52,63 +52,57 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
+    color: #e0e0e0;
+    font-size: 18px;
     padding: 10px 20px;
-    border: 2px solid transparent;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
-nav ul li a:hover {
-    color: gold;
-    border-color: gold;
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-    color: gold;
-    border-color: gold;
+    color: #0f0f0f;
+    background-color: #29b6f6;
     font-weight: bold;
 }
 
 .upcoming-movies {
     padding: 20px;
     text-align: center;
+    background: #1a1a1a;
+    border-radius: 8px;
+    margin: 20px;
 }
 
 .upcoming-movies h2 {
-    font-size: 24px;
-    color: gold;
+    font-size: 28px;
+    color: #29b6f6;
     margin-bottom: 20px;
 }
 
 .movie-slider {
-    display: flex; 
-    gap: 20px; 
-    overflow-x: auto; 
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scrollbar-width: thin;
     padding: 10px 0;
-    scrollbar-width: thin; 
 }
 
 .movie-slider::-webkit-scrollbar {
-    height: 8px; 
+    height: 8px;
+    background-color: #333;
 }
 
 .movie-slider::-webkit-scrollbar-thumb {
-    background-color: #333; 
+    background-color: #29b6f6;
     border-radius: 5px;
 }
 
-.movie-item {
-    text-align: center;
-}
-
 .movie-item img {
-    width: 150px; 
+    width: 150px;
     height: auto;
-    border-radius: 5px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
-    transition: transform 0.3s ease; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .movie-item img:hover {
@@ -117,7 +111,6 @@ nav ul li a.active {
 
 .movie-item p {
     margin-top: 10px;
-    color: #fff;
     font-size: 16px;
     font-weight: bold;
 }
@@ -236,31 +229,49 @@ table tr:hover {
     padding: 20px 0;
 }
 
+.popular-bets, .recent-winners {
+    border: 2px solid #29b6f6; 
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(41, 182, 246, 0.3);
+}
+
+.popular-bets .bet-grid, .recent-winners .winner {
+    padding: 10px;
+}
+
 .popular-bets .bet-item {
     text-align: center;
-    background: #222;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #29b6f6;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.popular-bets .bet-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(41, 182, 246, 0.7);
 }
 
 .popular-bets .bet-item img {
-    width: 150px;
+    width: 140px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .popular-bets .bet-item p {
-    margin-top: 10px;
+    margin: 5px 0;
     font-size: 16px;
-    color: #fff;
 }
 
 .popular-bets .bet-item .bets-count {
     font-weight: bold;
-    color: gold;
+    color: #29b6f6;
 }
-
 .popular-bets .bet-item p {
     margin-top: 10px;
     font-size: 16px;
@@ -274,42 +285,48 @@ table tr:hover {
 
 .popular-bets .bet-item .wagered-amount {
     font-weight: bold;
-    color: #32CD32; /* Lime Green */
+    color: #76ff03;
     font-size: 14px;
 }
 
 .active-bets {
     padding: 20px;
-    background: #222;
-    border-radius: 5px;
+    background: #1a1a1a;
+    border-radius: 8px;
     text-align: center;
+    border: 1px solid #29b6f6;
+}
+
+.active-bets .bet-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(41, 182, 246, 0.7);
 }
 
 .active-bets .bet-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #333;
+    background: #212121;
     padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
 .active-bets .bet-item img {
-    width: 150px;
+    width: 140px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
 .active-bets .bet-item p {
     margin: 5px 0;
     font-size: 16px;
-    color: #fff;
 }
 
 .active-bets .bet-item p strong {
-    color: gold;
+    color: #29b6f6;
 }
 
 @media (max-width: 768px) {
