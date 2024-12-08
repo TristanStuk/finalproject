@@ -72,3 +72,25 @@ nav ul li a {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #333;
+    color: #fff;
+}
+
+table td {
+    background: #222;
+    color: #fff;
+}
